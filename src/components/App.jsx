@@ -2,10 +2,10 @@ import "../index.css";
 import "modern-normalize";
 import "./App.css";
 import Profile from "./Profile/Profile";
-import userData from "./../assets/user.Data.json";
+import userData from "../assets/user.Data.json";
 
 const App = () => {
-  console.log(profileData);
+  console.log(userData);
   return (
     <Profile
       name={userData.username}

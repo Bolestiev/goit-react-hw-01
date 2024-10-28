@@ -10,18 +10,18 @@ const Profile = ({ name, tag, location, image, stats }) => {
         <p className={styles.tag}>@{tag}</p>
         <p className={styles.location}>{location}</p>
       </div>
-      <ul className={styles.stats}>
-        <li>
+      <ul className={styles.list}>
+        <li className={styles.item}>
           <span>Followers</span>
-          <span>{stats.followers}</span>
+          <span className={styles.stats}>{stats.followers}</span>
         </li>
-        <li>
+        <li className={styles.item}>
           <span>Views</span>
-          <span>{stats.views}</span>
+          <span className={styles.stats}>{stats.views}</span>
         </li>
-        <li>
+        <li className={styles.item}>
           <span>Likes</span>
-          <span>{stats.likes}</span>
+          <span className={styles.stats}>{stats.likes}</span>
         </li>
       </ul>
     </div>
